@@ -5,7 +5,7 @@ Este proyecto contiene dos partes el BACKEND
 	Necesita configura la BDD antes de ejecutar el Rest API.
 ## Base de datos
 * Crear la base de datos con el nombre "hulk", 
-* Esta bdd contiene tablas del sistema: (Usar el script hulk.sql)
+* Esta bdd contiene tablas del sistema.
 
 
 ## Rest API
