@@ -91,7 +91,7 @@ public class ProductController {
 	 */
 	@CrossOrigin
 	@RequestMapping(path = "/{id}", produces = "application/json")
-	public void eliminarPaquete(@PathVariable(value = "id") Integer codigo) {
+	public void eliminarProduct(@PathVariable(value = "id") Integer codigo) {
 		try {
 			productService.eliminar(codigo);
 		} catch (DataIntegrityViolationException e) {
