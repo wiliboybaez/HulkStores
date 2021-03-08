@@ -19,3 +19,21 @@ Ejecutar la aplicación en modo de desarrollo.<br>
 [http://localhost:8080](http://localhost:8080) Ruta para ver en el navegador.
 
 
+# 2. FRONT-END (clientstore)-- ESTA INCOMPLETO
+
+Este proyecto esta realizado con REACT Incluye Hooks, Context.
+La aplicación Web consume los servicios del RestApi 
+* Configurar las variables de conexion al Rest API.
+	* 1. Verificar el archivo flightclient\.env.development.local
+		REACT_APP_BACKEND_URL=http://localhost:8080
+
+
+## Iniciar Proyecto en consola
+
+### `npm install`
+
+### `npm start`
+
+Ejecutar la aplicación en modo de desarrollo.<br>
+[http://localhost:3000](http://localhost:3000) Ruta para ver en el navegador.
+
