@@ -45,7 +45,7 @@ public class LoginService {
 	private UserView doUserResponse(Usuario user) {
 		UserView userViews = new UserView(user.getId(), user.getEmail());
 		userViews.setRol(rolRepository.findById(user.getRole().getId()).get().getRole());
-		userViews.setToken(user.getEmail()+"-123456789");//token temporal
+		//userViews.setToken(user.getEmail()+"-123456789");//token temporal
 		return userViews;
 	}
 
