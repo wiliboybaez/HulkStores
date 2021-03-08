@@ -83,22 +83,21 @@ public class LoginServiceTest {
 	private Usuario findUsuario() {
 		Usuario usuario = new Usuario();
 		usuario.setId(2);
-		usuario.setEmail("venta@tienda.com");
+		usuario.setEmail("venta@todo1.com");
 		usuario.setRole(findRol());
 		return usuario;
 	}
 
 	@Test
 	public void whenValidName_thenUsuarioShouldBeFound() {
-		String email = "cliente@todo1.com";
+		String email = "venta@todo1.com";
 		user = createUsuario();
 		Usuario usuario = findUsuario();
 		when(usuarioRepository.findByEmail(usuario.getEmail())).thenReturn(usuario);
-		when(usuarioRepository.save(user)).thenReturn(user);
+		when(usuarioRepository.save(user)).thenReturn(usuario);
 		BodyView<UserView> savedUsuario = loginService.crearUser(user);
 		// Assert
 		assertThat(savedUsuario.getData().getEmail(), is(equalTo(email)));
-		
 	}
 
 	@Test
