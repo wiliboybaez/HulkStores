@@ -1,5 +1,5 @@
 # APLICACION HulkStores
-Este proyecto contiene dos partes el BACKEND Y FRONT-END
+Este proyecto contiene dos partes el BACKEND 
 
 # 1. BACKEND  (HulkSpringMaven)
 	Necesita configura la BDD antes de ejecutar el Rest API.
@@ -10,8 +10,6 @@ Este proyecto contiene dos partes el BACKEND Y FRONT-END
 
 ## Rest API
 Este Rest API se encuentra realizado en el IDE Eclipse(Spring Tool Suite) con Java 8 y Spring Boot, PostgresSQL,JPA,Hibernate con Maven. 
-Contiene un CRUD con la tabla de "ticket" y auntenticación del usuario SUPERVISOR con la tabla "usuario".
-
 * Configurar las variables de conexion a la Base de datos.
 	* 1. Verificar el archivo HulkSpringMaven\src\main\resources\application.properties
 		spring.datasource.url=jdbc:postgresql://localhost:5432/hulk (Verifica la ruta de conexion:puerto/'NombreBDD')
